@@ -205,7 +205,7 @@ needed, such as borders and some image dimensions.
 
 ## 4.3 Responsive Images
 
-Images were added using the HTML "<img>" element with appropriate 
+Images were added using the HTML "img" element with appropriate 
 alternative text using the "alt" attribute.
 
 Image sizes are controlled to maintain a consistent appearance within 
@@ -266,13 +266,14 @@ The HTML structure was improved by using semantic HTML5 elements.
 
 The following elements were used where appropriate:
 
-- <header>
-- <nav>
-- <main>
-- <section>
-- <article>
-- <aside>
-- <footer>
+- header
+- nav
+- main
+- section
+- article
+- aside
+- footer
+
 
 These elements provide a clearer structure for the website and make it 
 easier to understand how the content is organised.
