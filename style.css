@@ -1,0 +1,589 @@
+/* 
+   Global webpage styling.
+   These properties create a consistent font, text colour,
+   background colour and line spacing across the website.
+*/
+body {
+    color: darkslategray;
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* 
+   Main heading styling.
+   This creates a consistent appearance for the primary
+   heading used on the different website pages.
+*/
+h1 {
+    color: lightcoral;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+
+/* 
+   Secondary heading styling.
+   These headings are used to introduce sections of
+   information within the website.
+*/
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* 
+   Header styling.
+   The header provides spacing and a background area
+   for the Leumy logo and navigation menu.
+*/
+.products-header,
+.contact-header,
+#enquiry-header {
+
+    padding: 20px;
+    background-color: rgb(247, 205, 220);
+    margin-bottom: 5px;
+}
+
+/* 
+   Logo styling.
+   The width is controlled while the height remains automatic
+   so that the logo keeps its original proportions.
+*/
+#products-logo,
+#contact-logo,
+#enquiry-logo {
+    width:100px;
+    height:auto;
+
+}
+
+/* 
+   Navigation layout.
+   Flexbox is used to arrange the navigation links neatly
+   and keep the menu centred within the header.
+*/
+.products-nav,
+.contact-nav,
+.enquiry-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.products-nav a,
+.contact-nav a,
+.enquiry-nav a {
+    text-decoration: none;
+    color: darkslategrey;
+    font-size: 16px;
+    font-weight:bold;
+
+}
+
+.products-nav a:link,
+.enquiry-nav a:link,
+.contact-nav a:link {
+    color: darkslategrey;
+}
+
+.products-nav a:visited,
+.enquiry-nav a:visited,
+.contact-nav a:visited {
+    color: gray;
+}
+
+.products-nav a:hover,
+.contact-nav a:hover,
+.enquiry-nav a:hover {
+    color: lightcoral;
+    text-decoration: underline;
+}
+
+.products-nav a:active,
+.contact-nav a:active,
+.enquiry-nav a:active {
+    color: lightcoral;
+}
+
+/* 
+   Home page category layout.
+   Flexbox allows the product categories to be displayed
+   next to each other and wrap onto another line when needed.
+*/
+#category-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin:30px;
+}
+
+/* 
+   Individual category card styling.
+   Each card groups the category image and heading together
+   to create a clear visual product category.
+*/
+.category {
+    width: 220px;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-radius:10px;
+}
+
+.category img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+#about-title,
+#Mission-title,
+#Vision-title {
+    text-align: center;
+    margin: 20px;
+    color: lightcoral;
+}
+
+#about-text,
+.Mission-text,
+.Vision-text {
+    width: 80%;
+    margin: 20px auto;
+
+}
+
+/* 
+   About page layout.
+   Creates spacing around the main content and keeps
+   the information organised on the page.
+*/
+.about-page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0 40px;
+}
+
+
+/* 
+   About page heading.
+   Gives the main heading a soft pink appearance
+   that matches the Leumy website design.
+*/
+.about-page h1 {
+    text-align: center;
+    color: lightcoral;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+
+/* 
+   About content container.
+   CSS Grid arranges the information cards into
+   two columns on larger screens.
+*/
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+/* 
+   Individual information cards.
+   Each section is placed inside a rounded box
+   with a light background, border and shadow.
+*/
+.about-card {
+    background-color: #fff8f8;
+    border: 2px solid #f6d6dc;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* 
+   Changes the background colour when the user
+   moves the mouse over an information card.
+*/
+.about-card:hover {
+    background-color: #fff0f3;
+}
+
+
+/* 
+   Card headings.
+   Makes the headings stand out from the paragraph
+   while keeping the pink colour of the website.
+*/
+.about-card h2 {
+    color: lightcoral;
+    text-align: left;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+/* 
+   Card paragraph styling.
+   Improves readability by controlling the text size,
+   line spacing and text colour.
+*/
+.about-card p {
+    color: darkslategray;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* 
+   Commitment card.
+   Makes the commitment section stretch across
+   both columns of the grid.
+*/
+.commitment-card {
+    grid-column: 1 / -1;
+    background-color: #fdecef;
+}
+#Shop {
+    text-align: center;
+    font-size: 20px;
+    font-weight:bold;
+    margin: 20px;
+}
+
+/* 
+   Product page layout.
+   Flexbox separates the category sidebar from the
+   main product catalogue.
+*/
+
+#products-content {
+    display: flex;
+    gap: 30px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+/* 
+   Category sidebar.
+   This section provides links for browsing products
+   according to their category.
+*/
+.categories-list {
+    width: 20%
+
+}
+
+.categories-list h2 {
+    margin-bottom: 15px;
+}
+
+.categories-list a {
+    display: block;
+    text-decoration: none;
+    color: darkslategray;
+    margin-bottom:10px; 
+}
+
+.categories-list a:hover {
+    color: lightcoral;
+}
+
+/* 
+   Product grid layout.
+   CSS Grid is used to organise the products into
+   three columns on larger screens.
+*/
+.product-grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* 
+   Product card styling.
+   Each card contains the image, product name, price
+   and button for an individual product.
+*/
+.product-card {
+    text-align: center;
+    border: 1px solid lightgrey;
+    padding: 15px;
+    border-radius:10px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.product-card h2 {
+    margin:10px;
+}
+
+.product-card p {
+    margin: 10px;
+}
+
+.product-card:hover {
+    box-shadow: 0 0 10px lightgrey;
+
+}
+
+/* 
+   Button styling.
+   These properties create a consistent appearance
+   for buttons used on the website.
+*/
+button {
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* 
+   Button hover effect.
+   Changes the button background when the user
+   moves the mouse over it.
+*/
+button:hover {
+    background-color: lightcoral;
+}
+
+button:focus {
+    outline: 2px solid darkslategray;
+}
+
+button:active {
+    background-color: palevioletred;
+}
+
+.enquiry-page {
+    width: 80%;
+    margin: 30px auto;
+}
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    color: lightcoral;
+    font-size: 16px;
+}
+
+
+.enquiry-intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.enquiry-form {
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.enquiry-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid lightgrey;
+}
+
+.enquiry-form textarea {
+    height: 150px;
+}
+
+
+.contact-title {
+    color: lightcoral;
+    margin: 30px;
+}
+
+/* 
+   Contact page layout.
+   Flexbox places the contact information and contact
+   form next to each other on larger screens.
+*/
+.contact-section {
+    display: flex;
+    gap: 30px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.contact-information,
+.contact-form-section {
+    width: 50%;
+}
+
+.contact-information h2,
+.contact-form-section h2 {
+    margin-bottom: 15px;
+}
+
+.contact-information p {
+    margin-bottom: 10px;
+}
+
+.contact-form-section label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid lightgray;
+}
+
+.contact-form-section textarea {
+    height: 150px;
+}
+
+/* 
+   Footer layout.
+   Flexbox distributes the footer sections evenly
+   across the available page width.
+*/
+#footer-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(247, 205, 220);
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.footer-column {
+    width: 25%;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    display: block;
+    color: darkslategrey;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-column a:hover {
+    color: lightcoral;
+    text-decoration: underline;
+}
+
+
+/* 
+   Responsive navigation and page layout.
+   When the screen becomes smaller, the navigation changes
+   to a vertical layout and the contact sections stack.
+*/
+
+@media screen and (max-width: 768px) {
+
+    .products-nav,
+    .enquiry-nav,
+    .contact-nav {
+        flex-direction: column;
+    }
+
+    #products-content {
+        flex-direction: column;
+    }
+
+    .categories-list,
+    .product-grid {
+        width: 100%;
+    }
+
+    /* Changes the product catalogue to two columns on tablets */
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Stacks the contact information and form vertically */
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-information,
+    .contact-form-section {
+        width: 100%;
+    }
+
+    #footer-container {
+        flex-direction:column;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .commitment-card {
+        grid-column: auto;
+    }
+
+    .about-card {
+        padding: 25px;
+    }
+}
+
+/* 
+   Mobile product layout.
+   On very small screens, products are displayed one per row
+   so that the cards remain easy to view and use.
+*/
+
+@media screen and (max-width: 480px) {
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
