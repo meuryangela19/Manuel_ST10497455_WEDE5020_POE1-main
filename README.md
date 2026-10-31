@@ -1,383 +1,635 @@
-# Leumy Website
+Leumy Website
 
-## Student Information
+Student Information
 
-- Student Name:Meury Manuel
-- Student Number: ST10497455
-- Module: WEDE5020
-- Institution: Rosebank College
+Student Name: Meury Manuel
 
----
+Student Number: ST10497455
 
-# Leumy Website
+Module: WEDE5020
 
-## 1. Project Overview
+Institution: Rosebank College
 
-Leumy is an online and in-store retail business established in March 2024. 
-The business specialises in beauty and fashion products, including 
-skincare, cosmetics, personal care products and women's clothing.
+1. Project Overview
 
-The purpose of the Leumy website is to provide customers with information 
-about the business, display its products, allow customers to make product 
-enquiries and provide contact information.
+Leumy is an online and in-store retail business established in March 2024. The business specialises in beauty and fashion products, including skincare, cosmetics, personal care products and women's clothing.
 
-The website was developed using HTML5 and CSS, with a focus on creating 
-a clear, consistent and responsive design that can be viewed on desktop, 
-tablet and mobile screen sizes.
+The purpose of the Leumy website is to provide customers with information about the business, display available products, allow customers to make product enquiries and provide contact information.
 
----
+The website was developed using HTML5, CSS and JavaScript. Git and GitHub were used for version control and project management. The website aims to provide a consistent and user-friendly experience across desktop, tablet and mobile devices.
 
-## 2. Website Pages
+The website includes interactive features such as product searching, product sorting, a shopping cart, image previews and customer enquiry and contact forms.
 
-The Leumy website consists of five main pages:
+2. Website Pages
 
-### Home Page
+The Leumy website consists of five main pages.
 
-The Home page introduces visitors to Leumy and provides an overview of 
-the different product categories available. The categories include 
-skincare, cosmetics, personal care and fashion.
+2.1 Home Page
 
-### About Us Page
+The Home page introduces visitors to Leumy and provides an overview of the different product categories available.
 
-The About Us page provides information about the Leumy business. It 
-includes the following sections:
+The categories include:
 
-- About Our Business
-- Our Mission
-- Our Vision
-- What We Offer
-- Our Commitment
+Skincare
 
-The information was organised into separate content cards to make the 
-page easier to read and improve the overall visual layout.
+Cosmetics
 
-### Products Page
+Personal care
 
-The Products page displays the products available from Leumy. Products 
-are organised using a grid layout, while a category section allows users 
-to view the different product categories.
+Fashion
 
-The page also includes a search field and sorting options as part of the 
-product interface.
+The page includes the main navigation menu, branding, category images and links to other website pages.
 
-### Enquiry Page
+2.2 About Us Page
 
-The Enquiry page contains a form that allows customers to provide their 
-details and submit an enquiry about Leumy products.
+The About Us page provides information about the Leumy business. It contains the following sections:
 
-### Contact Us Page
+About Our Business
 
-The Contact Us page provides customers with Leumy's contact information 
-and a form for sending a message to the business.
+Our Mission
 
----
+Our Vision
 
-# 3. CSS Styling for Desktop Solution
+What We Offer
 
-## 3.1 External Stylesheet
+Our Commitment
 
-An external stylesheet named "style.css" was created and linked to the 
-HTML pages.
+The content is organised into information cards to improve readability and create a consistent visual layout.
 
-Using an external stylesheet allows the website to maintain a consistent 
-design across all pages and avoids repeating the same CSS code in each 
-HTML file.
+2.3 Products Page
 
-The stylesheet contains the main styling for the website, including 
-typography, colours, navigation, layouts, product cards, forms, buttons 
-and responsive design.
+The Products page displays the products available from Leumy. Products are arranged using a grid layout.
 
-## 3.2 Base Styling
+The page includes:
 
-Base styles were created for the website to provide a consistent 
-appearance across all pages.
+Product images and descriptions
 
-The base styling  includes:
+Product prices
 
-- Font family
-- Font size
-- Text colour
-- Line height
-- Background colour
-- Margins
-- Padding
+Category filtering
 
+Product searching
 
-## 3.3 Typography
+Price sorting
 
-CSS typography properties were used to create a clear visual hierarchy 
-throughout the website.
+Add-to-cart buttons
 
-The following properties were used:
+A shopping cart interface
 
-- font-family
-- font-size
-- font-weight
-- line-height
-- text-align
+JavaScript is used to update the product display and shopping cart in response to user interactions.
 
-Larger and bolder headings are used for page titles and section headings, 
-while paragraphs use a smaller font size and increased line spacing to 
-improve readability.
+The shopping cart uses browser local storage to retain its contents between page visits on the same browser. The checkout functionality is a demonstration and does not process real payments.
 
-## 3.4 Layout Structure
+2.4 Enquiry Page
 
-Flexbox and CSS Grid were used to structure and organise the website 
-content.
+The Enquiry page allows customers to submit questions about Leumy products.
 
-Flexbox was used for:
+The form collects relevant customer information and enquiry details. HTML form controls and JavaScript validation are used to help ensure that required information is provided.
 
-- Navigation menus
-- Contact page sections
-- Footer sections
-- Product page layout
+Form submissions are configured to use Formspree, subject to the form endpoint being correctly configured and active.
 
-CSS Grid was used for:
+2.5 Contact Us Page
 
-- Product cards
-- About Us information cards
+The Contact Us page provides Leumy's contact information, business address and operating hours.
 
-The desktop version of the Products page displays multiple product cards 
-in columns. The About Us page also uses a two-column card layout on 
-larger screens.
+It also includes a contact form for customers who want to send a message to the business. An embedded Google Map provides location information.
 
-## 3.5 Visual Styling
+The contact form uses HTML validation and JavaScript to validate information and submit messages asynchronously through AJAX, provided the Formspree endpoint is active.
 
-Visual styling was added to make the website more attractive and easier 
-to use.
+3. CSS Styling for the Desktop Solution
 
-The following CSS properties were used:
+3.1 External Stylesheet
 
-- color
-- background-color
-- border
-- border-radius
-- box-shadow
-- padding
-- margin
+An external stylesheet named style.css is linked to the website's HTML pages.
 
-The About Us page was redesigned using rounded information cards. Each 
-section is placed inside its own box to make the content easier to 
-understand and visually separate the different topics.
+Using an external stylesheet allows the website to maintain consistent styling across the different pages and reduces the need to repeat CSS rules in individual HTML files.
 
-Hover effects were also added to selected elements to provide visual 
-feedback when users interact with them.
+The stylesheet contains rules for:
 
-The ":focus" pseudo-class was also used to improve the appearance of 
-focused interactive elements.
+Typography
 
----
+Colours and backgrounds
 
-# 4. Responsive Design
+Navigation
 
-## 4.1 Breakpoints
+Page layouts
 
-Media queries were used to make the website responsive across different 
-screen sizes.
+Product cards
 
-The website was designed for:
+Forms and buttons
 
-- Desktop screens
-- Tablet screens
-- Mobile screens
+Image presentation
 
-A breakpoint of "768px" is used to change the layout for smaller screens.
+Responsive layouts
 
-A second breakpoint of "480px" is used for very small mobile screens.
+Hover and focus effects
 
-On smaller screens, the navigation changes from a horizontal layout to a 
-vertical layout.
+3.2 Base Styling
 
-The product grid also changes according to the screen size. The desktop 
-layout displays three products per row, the tablet layout displays two 
-products per row, and the mobile layout displays one product per row.
+Base styles establish a consistent appearance throughout the website.
 
-## 4.2 Relative Units
+These include:
 
-Relative units such as "% " were used to improve the 
-responsiveness of the website.
+Font family and size
 
-Percentages are used for the widths of larger page sections so that they 
-can adjust according to the available screen size.
+Text colour
 
-Fixed units such as "px" are still used where precise dimensions are 
-needed, such as borders and some image dimensions.
+Line height
 
-## 4.3 Responsive Images
+Background colour
 
-Images were added using the HTML "<img>" element with appropriate 
-alternative text using the "alt" attribute.
+Margins and padding
 
-Image sizes are controlled to maintain a consistent appearance within 
-the website layout.
+Element spacing
 
-## 4.4 Testing and Iteration
+The website uses a floral-white background with complementary colours to create a consistent visual identity for Leumy.
 
-The website was tested by gradually reducing the browser window width to 
-check how the layout responds to different screen sizes.
+3.3 Typography
 
-The responsive design was checked for:
+CSS typography properties establish a visual hierarchy and improve readability.
 
-- Navigation layout
-- Product grid layout
-- About Us cards
-- Contact page layout
-- Overall readability
-- Content spacing
+The following properties are used:
 
+font-family
 
-# 5. Improvements Based on Part 1 Feedback
+font-size
 
-Several improvements were made based on the feedback received for Part 1.
+font-weight
 
-## 5.1 Content Improvements
+line-height
 
-The website content was expanded to provide more information about the 
-business.
+text-align
 
-The About Us page was improved by adding:
+Headings distinguish page titles and section headings, while paragraph styling supports readable body content.
 
-- About Our Business
-- Our Mission
-- Our Vision
-- What We Offer
-- Our Commitment
+3.4 Layout Structure
 
-Additional product information and descriptions were also added to make 
-the Products page more informative.
+Flexbox and CSS Grid are used to organise website content.
 
-## 5.2 Navigation Improvements
+Flexbox is used for:
 
-The navigation menu was reviewed and improved so that users can clearly 
-move between the five main pages:
+Navigation and header arrangements
 
-- Home
-- About Us
-- Products
-- Enquiry
-- Contact Us
+Footer sections
 
-The navigation was also made responsive so that the menu changes to a 
-vertical layout on smaller screens.
+Contact page layouts
 
-## 5.3 HTML Structure Improvements
+Flexible alignment of interface elements
 
-The HTML structure was improved by using semantic HTML5 elements.
+CSS Grid is used for:
 
-The following elements were used where appropriate:
+Product cards
 
-- <header>
-- <nav>
-- <main>
-- <section>
-- <article>
-- <aside>
-- <footer>
+About Us information cards
 
-These elements provide a clearer structure for the website and make it 
-easier to understand how the content is organised.
+Responsive content arrangements
 
-## 5.4 Comments Improvements
+The layout changes according to screen size to improve the presentation of website content on different devices.
 
-The comments in the HTML and CSS code were improved based on the Part 1 
-feedback.
+3.5 Visual Styling
 
-Instead of using short or vague comments, comments were added to explain 
-the purpose of important sections of the code.
+CSS properties such as color, background-color, border, border-radius, box-shadow, padding and margin are used to improve the appearance of the website.
 
+Rounded information cards separate content into clear sections. Hover effects provide visual feedback, while focus styling helps users identify interactive elements when navigating the website.
 
-## 5.5 Git Commit Improvements
+4. Responsive Design
 
-Git commit messages were made more descriptive so that each commit 
-explains the changes made to the project.
+4.1 Media Queries and Breakpoints
 
-Examples of descriptive commit messages include:
+CSS media queries are used to adjust the layout according to the available screen width.
 
-- Improve semantic HTML structure
-- Improve About Us page content
-- Add responsive product grid
-- Improve navigation layout
-- Improve CSS comments
-- Add responsive mobile layout
+The website includes breakpoints at:
 
----
+768px for smaller screens, including many tablet layouts
 
-# 6. Changelog
+480px for smaller mobile screens
 
-## Part 2
+The product grid is designed to display:
 
-### Added
+Three products per row on larger desktop screens
 
-- Added more detailed content to the About Us page.
-- Added the What We Offer section.
-- Added the Our Commitment section.
-- Added information cards to the About Us page.
-- Added responsive styling for desktop, tablet and mobile screens.
-- Added a mobile breakpoint for smaller devices.
-- Added hover effects to interactive elements.
-- Added focus styling for interactive elements.
-- Added additional CSS comments explaining important sections.
+Two products per row on tablet screens
 
-### Updated
+One product per row on smaller mobile screens
 
-- Updated the HTML structure using semantic HTML5 elements.
-- Updated the navigation layout.
-- Updated the Products page layout using CSS Grid.
-- Updated the About Us page layout using CSS Grid.
-- Updated the Contact page layout using Flexbox.
-- Updated the product cards.
-- Updated the styling and spacing across the website.
-- Updated content based on feedback received from Part 1.
-- Updated Git commit messages to provide clearer descriptions of changes.
+The navigation and other page sections are also adjusted for smaller screens.
 
-### Fixed
+4.2 Relative Units
 
-- Fixed incorrect HTML structure and closing tags.
-- Fixed navigation and page linking issues.
-- Fixed responsive product layout.
-- Fixed the product grid so that it changes from three columns to two 
-  columns and then one column on smaller screens.
-- Fixed CSS selector issues affecting responsive layouts.
+Relative units, including percentages, are used where appropriate to allow page sections to adapt to different screen widths.
 
----
+Pixel values are retained where fixed dimensions are appropriate, such as borders and selected spacing values.
 
-# 7. Technologies Used
+4.3 Responsive Images
 
-The Leumy website was created using the following technologies:
+Images are included using the HTML img element. Alternative text is provided through the alt attribute to describe images where appropriate.
 
-- HTML5
-- CSS
-- Visual Studio Code
-- Git
-- GitHub
+CSS controls image sizing and positioning to maintain a consistent presentation within product cards and other content sections.
 
-CSS techniques used include:
+4.4 Testing and Iteration
 
-- Flexbox
-- CSS Grid
-- Media Queries
-- Pseudo-classes
-- Responsive layouts
-- Relative units
+The website is checked at different browser widths to identify layout problems.
 
----
+The responsive design review includes:
 
-8. References
+Navigation layout
 
-MDN Web Docs. (n.d.). HTML: HyperText Markup Language.
-Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 10 September 2026).
+Product grid arrangement
 
-MDN Web Docs. (n.d.). CSS: Cascading Style Sheets.
-Available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed: 10 September 2026).
+About Us cards
 
-MDN Web Docs. (n.d.). CSS Grid Layout.
-Available at: https://developer.mozilla.org/en-US/ (Accessed: 10 September 2026).
+Contact page layout
 
-MDN Web Docs. (n.d.). CSS Flexible Box Layout.
-Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout (Accessed: 12 September 2026).
+Form presentation
 
-W3Schools. (n.d.). HTML Tutorial.
-Available at: https://www.w3schools.com/html/ (Accessed: 12 September 2026).
+Readability and spacing
 
-W3Schools. (n.d.). CSS Tutorial.
-Available at: https://www.w3schools.com/Css/ (Accessed: 14 September 2026).
+Image sizing
+
+Responsive testing should be performed on desktop, tablet-sized and mobile-sized viewports.
+
+5. Improvements Based on Part 1 Feedback
+
+Several changes were made to improve the website following feedback received for Part 1.
+
+5.1 Content Improvements
+
+The About Us page was expanded to include additional information about the business, its mission, vision, products and commitment to customers.
+
+Product information and descriptions were also expanded to provide customers with more useful information.
+
+5.2 Navigation Improvements
+
+The navigation menu was reviewed following feedback that its adjustments were incomplete or incorrect and that its responsive behaviour had significant issues.
+
+The improvements focus on:
+
+Maintaining consistent navigation across the five website pages
+
+Ensuring that navigation links point to the correct HTML files
+
+Improving spacing and alignment between navigation elements
+
+Adjusting the navigation layout for smaller screens
+
+Checking that navigation items remain readable and accessible
+
+Reviewing the header layout to prevent overlapping or misplaced elements
+
+The navigation should be tested at desktop, tablet and mobile widths to ensure that it remains usable and that all links work correctly.
+
+5.3 HTML Structure Improvements
+
+Semantic HTML5 elements are used where appropriate to organise website content.
+
+These include:
+
+header
+
+nav
+
+main
+
+section
+
+article
+
+aside
+
+footer
+
+The elements provide a clearer structure for the content and improve the readability and maintainability of the HTML code.
+
+5.4 Code Comments
+
+Comments were reviewed to explain the purpose of important sections of the HTML, CSS and JavaScript code.
+
+The intention is to make the code easier to understand and maintain.
+
+5.5 Git Commit Improvements
+
+Descriptive commit messages are used to explain the changes made to the project.
+
+Examples include:
+
+Improve semantic HTML structure
+
+Improve About Us page content
+
+Add responsive product grid
+
+Fix responsive navigation layout
+
+Improve form validation
+
+Add AJAX form submission
+
+Add SEO robots and sitemap files
+
+Each commit should describe the actual changes included in that commit.
+
+6. Part 3: JavaScript, Forms and SEO
+
+6.1 JavaScript Interactive Features
+
+JavaScript is used to make parts of the website interactive.
+
+The implemented features include:
+
+Product searching
+
+Product price sorting
+
+Shopping cart updates
+
+Saving cart contents using local storage
+
+Product image previews through a lightbox
+
+User feedback when interacting with selected elements
+
+These features improve the interaction between the customer and the website.
+
+6.2 Dynamic Product Display
+
+The Products page includes a search field and price-sorting options.
+
+JavaScript is used to search product information and reorder product cards according to their prices.
+
+Category filtering allows customers to focus on products from a selected category.
+
+The search, category filter and sorting functions should be tested together to ensure that they operate consistently.
+
+6.3 Shopping Cart
+
+The shopping cart allows customers to add products and remove items from the cart.
+
+JavaScript updates the cart display and total price. Browser local storage is used to retain cart information between page visits.
+
+The checkout interface is for demonstration purposes only. It does not represent a secure, live payment-processing system.
+
+6.4 Form Validation
+
+The Enquiry and Contact pages include customer forms.
+
+HTML validation attributes and JavaScript are used to check information before submission.
+
+Validation can include:
+
+Required fields
+
+Email format
+
+Phone-number format on the Enquiry form
+
+Minimum and maximum text lengths
+
+Appropriate error messages
+
+Client-side validation improves the user experience but does not replace server-side validation.
+
+6.5 AJAX Form Submission
+
+The forms are configured to submit information asynchronously using JavaScript's fetch() method.
+
+AJAX allows form information to be sent without a full-page reload.
+
+The interface can display:
+
+A message while the submission is in progress
+
+A success message if the submission is accepted
+
+An error message if the submission fails
+
+Form submission depends on valid and active Formspree endpoints, network availability and the service's configuration. Successful submission should be tested using the published website.
+
+6.6 Search Engine Optimisation
+
+Search engine optimisation (SEO) improvements include:
+
+Page titles
+
+Meta descriptions
+
+Relevant keywords
+
+Internal links between website pages
+
+Heading structure
+
+Alternative text for images
+
+Responsive layouts
+
+A robots.txt file
+
+A sitemap.xml file
+
+The robots.txt file provides instructions for search-engine crawlers. The sitemap lists the main website pages to help search engines discover them.
+
+Both files must use the correct published website address. Their presence does not guarantee that the website will be indexed or ranked by search engines.
+
+6.7 Website Testing
+
+Testing should cover the main website functionality.
+
+The testing process includes:
+
+Opening each website page
+
+Checking internal navigation links
+
+Testing the responsive layout
+
+Searching and sorting products
+
+Filtering products by category
+
+Adding and removing cart items
+
+Checking the displayed cart total
+
+Testing invalid and valid form inputs
+
+Testing successful and unsuccessful form submissions
+
+Checking the browser console for JavaScript errors
+
+Checking the published SEO files
+
+Issues identified during testing should be corrected and documented in the changelog.
+
+7. Changelog
+
+This changelog records the main changes made during development. Entries should be updated to reflect the changes actually implemented in the repository.
+
+Part 1
+
+Added
+
+Created the initial Leumy website structure.
+
+Added the main website pages.
+
+Added initial product and business content.
+
+Created the initial CSS styling.
+
+Part 2
+
+Added
+
+Added detailed content to the About Us page.
+
+Added the What We Offer section.
+
+Added the Our Commitment section.
+
+Added information cards to the About Us page.
+
+Added responsive styling for desktop, tablet and mobile screens.
+
+Added hover effects to selected elements.
+
+Added focus styling for interactive elements.
+
+Added comments explaining important sections of the code.
+
+Updated
+
+Improved the HTML structure using semantic HTML5 elements.
+
+Reviewed the navigation layout and internal page links.
+
+Updated the Products page using CSS Grid.
+
+Updated the About Us information-card layout.
+
+Updated the Contact page layout using Flexbox.
+
+Improved product card styling.
+
+Updated spacing and visual styling across the website.
+
+Improved content based on Part 1 feedback.
+
+Used more descriptive Git commit messages.
+
+Fixed
+
+Corrected HTML structure and closing-tag issues where identified.
+
+Corrected navigation and page-linking issues where identified.
+
+Improved the responsive product grid.
+
+Reviewed CSS selectors affecting responsive layouts.
+
+Part 3
+
+Added
+
+Added JavaScript functionality for product searching and price sorting.
+
+Added a shopping cart interface with cart totals and item removal.
+
+Added browser local storage to retain shopping cart contents.
+
+Added a lightbox for viewing product images.
+
+Added JavaScript form validation for the Enquiry and Contact pages.
+
+Added AJAX form submission through Formspree, subject to endpoint configuration.
+
+Added feedback messages for form submission success and errors.
+
+Created a robots.txt file for search-engine crawler instructions.
+
+Created a sitemap.xml file listing the main website pages.
+
+Updated
+
+Reviewed the navigation layout in response to feedback about incomplete or incorrect navigation adjustments and responsive behaviour.
+
+Reviewed form fields and validation rules.
+
+Updated the README to document the Part 3 functionality.
+
+Updated the references to include relevant HTML, CSS, JavaScript, SEO and form-submission documentation.
+
+Fixed
+
+Corrected navigation, form or JavaScript issues identified during testing.
+
+Corrected any sitemap URLs that did not match the published website.
+
+Corrected any form endpoint or validation issues identified during testing.
+
+Note: Keep the Part 3 entries under "Added", "Updated" and "Fixed" only when the relevant changes have been implemented. Remove any statements describing fixes that have not yet been completed or tested.
+
+8. Technologies Used
+
+The Leumy website uses the following technologies and tools:
+
+HTML5: Website structure and content.
+
+CSS: Styling and responsive layouts.
+
+JavaScript: Interactive elements, product functions, cart updates and form validation.
+
+AJAX and Fetch API: Asynchronous form submission.
+
+Local Storage: Retaining shopping cart information in the browser.
+
+Formspree: Form submission service.
+
+Visual Studio Code: Code editing.
+
+Git: Version control.
+
+GitHub: Source-code repository and website hosting through GitHub Pages, if enabled.
+
+CSS techniques include:
+
+Flexbox
+
+CSS Grid
+
+Media queries
+
+Pseudo-classes
+
+Relative units
+
+Responsive layouts
+
+Transitions and hover effects
+
+9. References
+
+Google. (n.d.). Google Search Central: Build and submit a sitemap. Available at: https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap (Accessed: 31 October 2026).
+
+MDN Web Docs. (n.d.). HTML: HyperText Markup Language. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 31 October 2026).
+
+MDN Web Docs. (n.d.). CSS: Cascading Style Sheets. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed: 31 October 2026).
+
+MDN Web Docs. (n.d.). CSS Grid Layout. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout (Accessed: 31 October 2026).
+
+MDN Web Docs. (n.d.). CSS Flexible Box Layout. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout (Accessed: 31 October 2026).
+
+MDN Web Docs. (n.d.). JavaScript. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript (Accessed: 31 October 2026).
+
+MDN Web Docs. (n.d.). Using the Fetch API. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch (Accessed: 31 October 2026).
+
+MDN Web Docs. (n.d.). Client-side form validation. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation (Accessed: 31 October 2026).
+
+GitHub Docs. (n.d.). Creating a GitHub Pages site. Available at: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site (Accessed: 31 October 2026).
+
+Sitemaps.org. (n.d.). Sitemaps XML format. Available at: https://www.sitemaps.org/protocol.html (Accessed: 31 October 2026).
+
+W3Schools. (n.d.). HTML Tutorial. Available at: https://www.w3schools.com/html/ (Accessed: 31 October 2026).
+
+W3Schools. (n.d.). CSS Tutorial. Available at: https://www.w3schools.com/css/ (Accessed: 31 October 2026).
+
+Formspree. (n.d.). Formspree Documentation. Available at: https://help.formspree.io/ (Accessed: 31 October 2026).
