@@ -138,7 +138,12 @@ Line height
 
 Background colour
 
+<<<<<<< HEAD
 Margins and padding
+=======
+Images were added using the HTML "img" element with appropriate 
+alternative text using the "alt" attribute.
+>>>>>>> f9f69228731c478b3a2df3e3e73746848a433b0c
 
 Element spacing
 
@@ -180,7 +185,18 @@ CSS Grid is used for:
 
 Product cards
 
+<<<<<<< HEAD
 About Us information cards
+=======
+- header
+- nav
+- main
+- section
+- article
+- aside
+- footer
+
+>>>>>>> f9f69228731c478b3a2df3e3e73746848a433b0c
 
 Responsive content arrangements
 
@@ -244,6 +260,7 @@ Form presentation
 
 Readability and spacing
 
+<<<<<<< HEAD
 Image sizing
 
 Responsive testing should be performed on desktop, tablet-sized and mobile-sized viewports.
@@ -633,3 +650,7 @@ W3Schools. (n.d.). HTML Tutorial. Available at: https://www.w3schools.com/html/ 
 W3Schools. (n.d.). CSS Tutorial. Available at: https://www.w3schools.com/css/ (Accessed: 31 October 2026).
 
 Formspree. (n.d.). Formspree Documentation. Available at: https://help.formspree.io/ (Accessed: 31 October 2026).
+=======
+W3Schools. (n.d.). CSS Tutorial.
+Available at: https://www.w3schools.com/Css/ (Accessed: 14 September 2026).
+>>>>>>> f9f69228731c478b3a2df3e3e73746848a433b0c
