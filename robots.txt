@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-WEBSITE-URL/sitemap.xml
+Sitemap:https://meuryangela19.github.io/Manuel_ST10497455_WEDE5020_POE1-main/
