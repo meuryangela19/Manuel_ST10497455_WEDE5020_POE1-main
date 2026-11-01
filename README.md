@@ -140,10 +140,11 @@ Background colour
 
 <<<<<<< HEAD
 Margins and padding
-=======
+
+
 Images were added using the HTML "img" element with appropriate 
 alternative text using the "alt" attribute.
->>>>>>> f9f69228731c478b3a2df3e3e73746848a433b0c
+ 
 
 Element spacing
 
@@ -187,7 +188,7 @@ Product cards
 
 <<<<<<< HEAD
 About Us information cards
-=======
+
 - header
 - nav
 - main
@@ -196,7 +197,6 @@ About Us information cards
 - aside
 - footer
 
->>>>>>> f9f69228731c478b3a2df3e3e73746848a433b0c
 
 Responsive content arrangements
 
@@ -650,7 +650,7 @@ W3Schools. (n.d.). HTML Tutorial. Available at: https://www.w3schools.com/html/ 
 W3Schools. (n.d.). CSS Tutorial. Available at: https://www.w3schools.com/css/ (Accessed: 31 October 2026).
 
 Formspree. (n.d.). Formspree Documentation. Available at: https://help.formspree.io/ (Accessed: 31 October 2026).
-=======
+
 W3Schools. (n.d.). CSS Tutorial.
 Available at: https://www.w3schools.com/Css/ (Accessed: 14 September 2026).
->>>>>>> f9f69228731c478b3a2df3e3e73746848a433b0c
+
