@@ -186,7 +186,7 @@ CSS Grid is used for:
 
 Product cards
 
-<<<<<<< HEAD
+< HEAD
 About Us information cards
 
 - header
@@ -260,7 +260,7 @@ Form presentation
 
 Readability and spacing
 
-<<<<<<< HEAD
+<//HEAD
 Image sizing
 
 Responsive testing should be performed on desktop, tablet-sized and mobile-sized viewports.
