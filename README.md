@@ -293,7 +293,6 @@ Checking that navigation items remain readable and accessible
 
 Reviewing the header layout to prevent overlapping or misplaced elements
 
-The navigation should be tested at desktop, tablet and mobile widths to ensure that it remains usable and that all links work correctly.
 
 5.3 HTML Structure Improvements
 
@@ -321,7 +320,6 @@ The elements provide a clearer structure for the content and improve the readabi
 
 Comments were reviewed to explain the purpose of important sections of the HTML, CSS and JavaScript code.
 
-The intention is to make the code easier to understand and maintain.
 
 5.5 Git Commit Improvements
 
@@ -343,7 +341,7 @@ Add AJAX form submission
 
 Add SEO robots and sitemap files
 
-Each commit should describe the actual changes included in that commit.
+
 
 6. Part 3: JavaScript, Forms and SEO
 
@@ -375,7 +373,7 @@ JavaScript is used to search product information and reorder product cards accor
 
 Category filtering allows customers to focus on products from a selected category.
 
-The search, category filter and sorting functions should be tested together to ensure that they operate consistently.
+
 
 6.3 Shopping Cart
 
@@ -383,7 +381,6 @@ The shopping cart allows customers to add products and remove items from the car
 
 JavaScript updates the cart display and total price. Browser local storage is used to retain cart information between page visits.
 
-The checkout interface is for demonstration purposes only. It does not represent a secure, live payment-processing system.
 
 6.4 Form Validation
 
@@ -419,7 +416,6 @@ A success message if the submission is accepted
 
 An error message if the submission fails
 
-Form submission depends on valid and active Formspree endpoints, network availability and the service's configuration. Successful submission should be tested using the published website.
 
 6.6 Search Engine Optimisation
 
@@ -445,7 +441,7 @@ A sitemap.xml file
 
 The robots.txt file provides instructions for search-engine crawlers. The sitemap lists the main website pages to help search engines discover them.
 
-Both files must use the correct published website address. Their presence does not guarantee that the website will be indexed or ranked by search engines.
+
 
 6.7 Website Testing
 
@@ -475,11 +471,11 @@ Checking the browser console for JavaScript errors
 
 Checking the published SEO files
 
-Issues identified during testing should be corrected and documented in the changelog.
+
 
 7. Changelog
 
-This changelog records the main changes made during development. Entries should be updated to reflect the changes actually implemented in the repository.
+
 
 Part 1
 
@@ -583,7 +579,7 @@ Corrected any sitemap URLs that did not match the published website.
 
 Corrected any form endpoint or validation issues identified during testing.
 
-Note: Keep the Part 3 entries under "Added", "Updated" and "Fixed" only when the relevant changes have been implemented. Remove any statements describing fixes that have not yet been completed or tested.
+
 
 8. Technologies Used
 
